@@ -3,24 +3,26 @@
   "version": "1.0.0",
   "description": "Adventure Game CLI using Node.js, TypeScript, and Inquirer",
   "homepage": "https://github.com/saadfrhan/node-inquirer-advgame-cli#readme",
-  "main": "src/index",
+  "main": "src/index.js",
   "type": "module",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
   "scripts": {
-    "start": "tsc && node dist/index",
-    "build": "tsc"
+    "start": "tsup src/index.ts --format cjs,esm --dts && node dist/index.js",
+    "build": "tsup src/index.ts --format cjs,esm --dts",
+    "lint": "tsc"
   },
-  "bin": "./dist/index.js",
   "dependencies": {
+    "@swc/core": "^1.3.36",
     "@types/inquirer": "^9.0.3",
     "@types/node": "^18.14.0",
-    "chalk": "^5.2.0",
-    "chalk-animation": "^2.0.3",
     "inquirer": "^9.1.4",
     "inquirer-autocomplete-prompt": "^3.0.0",
     "typescript": "^4.9.5"
   },
   "devDependencies": {
-    "@types/chalk-animation": "^1.6.1",
-    "@types/inquirer-autocomplete-prompt": "^3.0.0"
+    "@changesets/cli": "^2.26.0",
+    "@types/inquirer-autocomplete-prompt": "^3.0.0",
+    "tsup": "^6.6.3"
   }
 }
