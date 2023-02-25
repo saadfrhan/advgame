@@ -1,5 +1,11 @@
 # inquirer-advgame-cli
 
+## 1.0.1
+
+### Minor Change
+
+- 86df89f: Removed unused packages
+
 ## 1.0.0
 
 ### Major Changes
