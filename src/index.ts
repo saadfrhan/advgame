@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 import inquirer, { QuestionCollection } from 'inquirer';
 
 class main {

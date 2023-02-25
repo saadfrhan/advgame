@@ -1,5 +1,5 @@
 {
-  "name": "inquirer-advgame-cli",
+  "name": "advgame",
   "version": "0.0.2",
   "description": "Adventure Game CLI using Node.js, TypeScript, and Inquirer",
   "homepage": "https://github.com/saadfrhan/node-inquirer-advgame-cli#readme",
